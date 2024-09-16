@@ -1,0 +1,51 @@
+[versions]
+androidGradlePlugin = "8.7.0-alpha05"
+androidxActivity = "1.9.1"
+androidxAppCompat = "1.7.0"
+androidxComposeBom = "2024.08.00-alpha01"
+androidxNavigation = "2.7.7"
+androidxSplashscreen = "1.0.1"
+kotlin = "2.0.0"
+hilt = "2.52"
+ksp = "2.0.0-1.0.22"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-compose-bom = { group = "dev.chrisbanes.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+androidx-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxSplashscreen" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+[bundles]
+androidxCompose = [
+  "androidx-compose-animation",
+  "androidx-compose-foundation",
+  "androidx-compose-material-iconsExtended",
+  "androidx-compose-material3",
+  "androidx-compose-ui",
+  "androidx-navigation-compose"
+]
+
+core = [
+  "androidx-activity-compose",
+  "androidx-appcompat",
+  "androidx-splashscreen"
+]

@@ -1,0 +1,5 @@
+<resources>
+  <style name="Base.Theme.Demo" parent="@android:style/Theme.Material.Light" />
+  <style name="Platform.Demo" parent="Base.Theme.Demo" />
+  <style name="Theme.Demo" parent="Platform.Demo" />
+</resources>
