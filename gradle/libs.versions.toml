@@ -8,6 +8,9 @@ androidxSplashscreen = "1.0.1"
 kotlin = "2.0.0"
 hilt = "2.52"
 ksp = "2.0.0-1.0.22"
+okhttp = "4.12.0"
+retrofit = "2.11.0"
+sandwich = "2.0.9"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
@@ -25,6 +28,11 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 androidx-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxSplashscreen" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlinx-serialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
+kotlinx-serialization-json-jvm = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json-jvm", version = "1.7.2" }
+sandwich = { module = "com.github.skydoves:sandwich-retrofit", version.ref = "sandwich" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
